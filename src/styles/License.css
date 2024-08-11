@@ -1,0 +1,74 @@
+.license-contact-container {
+    max-width: 600px;
+    margin: 40px auto; /* Increased margin to give some spacing around the container */
+    padding: 20px;
+    background: linear-gradient(145deg, #141e30, #243b55);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+    margin-top: 12rem;
+  }
+  
+  .license-contact-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00e5ff;
+    font-size: 2.5em;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+  }
+  
+  .license-form-group {
+    margin-bottom: 15px;
+  }
+  
+  .license-form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00e5ff;
+    text-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+  }
+  
+  .license-form-group input,
+  .license-form-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(0, 229, 255, 0.7);
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .license-form-group input:focus,
+  .license-form-group textarea:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 8px rgba(0, 229, 255, 0.7);
+  }
+  
+  .license-form-group textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  .license-button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #00e5ff;
+    color: #141e30;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .license-button[type="submit"]:hover {
+    background-color: #00b3cc;
+    box-shadow: 0 0 12px rgba(0, 179, 204, 0.7);
+  }

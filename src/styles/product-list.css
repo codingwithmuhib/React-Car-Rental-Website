@@ -1,0 +1,159 @@
+body {
+  background-image: url('https://wallpaperaccess.com/full/5821444.jpg');
+  background-size: cover;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.product-list {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-grid {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #ccc;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex: 1 0 21%; /* Adjust the size of the product cards */
+}
+
+.product-grid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-grid .product-image {
+  overflow: hidden;
+  position: relative;
+}
+
+.product-grid .product-image img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.product-grid:hover .product-image img {
+  transform: scale(1.2);
+}
+
+.product-discount-label {
+  color: #fff;
+  background-color: #ff5733;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(255, 87, 51, 0.5);
+}
+
+.product-grid .product-content {
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+}
+
+.product-grid .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+  color: #333;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.product-grid .title a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.product-grid .title a:hover {
+  color: #007bff;
+}
+
+.product-grid .price {
+  color: #007bff;
+  font-size: 22px;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.product-grid .price span {
+  color: #777;
+  margin: 0 0 0 5px;
+  font-weight: 300;
+  text-decoration: line-through;
+  display: inline-block;
+}
+
+.product-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #ff5733, #ff8d1a);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(255, 87, 51, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.product-button:hover {
+  background: linear-gradient(90deg, #0ff, #00f);
+  box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+}
+
+.product-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+  transform: translate(-50%, -50%);
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.product-button:hover::before {
+  width: 0;
+  height: 0;
+}
+
+.product-button span {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 990px) {
+  .product-grid {
+    flex: 1 0 46%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-grid {
+    flex: 1 0 100%;
+  }
+}

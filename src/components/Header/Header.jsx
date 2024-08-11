@@ -3,7 +3,8 @@ import React, { useRef } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/header.css";
-
+import "../../pages/Contact";
+import logoImage from '../../assets/all-images/logo bg removed (2).png';
 const navLinks = [
   {
     path: "/home",
@@ -16,6 +17,10 @@ const navLinks = [
   {
     path: "/cars",
     display: "Cars",
+  },
+  {
+    path :"/services",
+    display:"Services",
   },
 
   {
@@ -41,20 +46,21 @@ const Header = () => {
           <Row>
             <Col lg="6" md="6" sm="6">
               <div className="header__top__left">
-                <span>Need Help?</span>
+                
+              <Link to="/contact" >Need Help</Link>
                 <span className="header__top__help">
-                  <i class="ri-phone-fill"></i> +1-202-555-0149
+                  <i class="ri-phone-fill"></i> 8270753591
                 </span>
               </div>
             </Col>
 
             <Col lg="6" md="6" sm="6">
               <div className="header__top__right d-flex align-items-center justify-content-end gap-3">
-                <Link to="#" className=" d-flex align-items-center gap-1">
+                <Link to="/Login" className=" d-flex align-items-center gap-1">
                   <i class="ri-login-circle-line"></i> Login
                 </Link>
 
-                <Link to="#" className=" d-flex align-items-center gap-1">
+                <Link to="/Register" className=" d-flex align-items-center gap-1">
                   <i class="ri-user-line"></i> Register
                 </Link>
               </div>
@@ -63,67 +69,35 @@ const Header = () => {
         </Container>
       </div>
 
-      {/* =============== header middle =========== */}
-      <div className="header__middle">
+            {/* ========== main navigation =========== */}
+
+      <div className="main__navbar">
         <Container>
-          <Row>
+        {/* <Row>
             <Col lg="4" md="3" sm="4">
               <div className="logo">
                 <h1>
                   <Link to="/home" className=" d-flex align-items-center gap-2">
                     <i class="ri-car-line"></i>
                     <span>
-                      Rent Car <br /> Service
+                      NXTLVL <br /> Automotives
                     </span>
                   </Link>
                 </h1>
               </div>
             </Col>
+          </Row> */}
+          <Row>
+  <Col lg="4" md="3" sm="4">
+    <div className="logo">
+      <Link to="/home" className="d-flex align-items-center gap-2">
+        <img src={logoImage} alt="NXTLVL Automotives" />
+      </Link>
+    </div>
+  </Col>
+</Row>
 
-            <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2">
-                <span>
-                  <i class="ri-earth-line"></i>
-                </span>
-                <div className="header__location-content">
-                  <h4>Bangladesh</h4>
-                  <h6>Sylhet City, Bangladesh</h6>
-                </div>
-              </div>
-            </Col>
-
-            <Col lg="3" md="3" sm="4">
-              <div className="header__location d-flex align-items-center gap-2">
-                <span>
-                  <i class="ri-time-line"></i>
-                </span>
-                <div className="header__location-content">
-                  <h4>Sunday to Friday</h4>
-                  <h6>10am - 7pm</h6>
-                </div>
-              </div>
-            </Col>
-
-            <Col
-              lg="2"
-              md="3"
-              sm="0"
-              className=" d-flex align-items-center justify-content-end "
-            >
-              <button className="header__btn btn ">
-                <Link to="/contact">
-                  <i class="ri-phone-line"></i> Request a call
-                </Link>
-              </button>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-
-      {/* ========== main navigation =========== */}
-
-      <div className="main__navbar">
-        <Container>
+          
           <div className="navigation__wrapper d-flex align-items-center justify-content-between">
             <span className="mobile__menu">
               <i class="ri-menu-line" onClick={toggleMenu}></i>
@@ -145,14 +119,7 @@ const Header = () => {
               </div>
             </div>
 
-            <div className="nav__right">
-              <div className="search__box">
-                <input type="text" placeholder="Search" />
-                <span>
-                  <i class="ri-search-line"></i>
-                </span>
-              </div>
-            </div>
+            
           </div>
         </Container>
       </div>

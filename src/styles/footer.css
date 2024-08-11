@@ -4,14 +4,12 @@
   padding-bottom: 15px;
 }
 
-.footer__logo i {
-  color: #fff;
-  font-weight: 400;
-}
-
-.footer__logo span {
-  color: #fff;
-  font-weight: 500;
+.logo img {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto;    /* Maintains the aspect ratio */
+  display: block;
+  margin: 0 auto;  /* Center the image if needed */
+  margin-left: -10px; /* Move the image slightly to the left, adjust value as needed */
 }
 
 .footer__logo-content {

@@ -1,0 +1,360 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #695CFE;
+    --panel-color: #E4E9F7;
+    --text-color: #707070;
+    --nav-color: #fff;
+    --sidebar-color: #FFF;
+    --box1-color: #4DA3FF;
+    --box2-color: #FFE6AC;
+    --box3-color: #E7D1FC;
+    --tran-05: all 0.5s ease;
+    --tran-03: all 0.3s ease;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--panel-color);
+    transition: var(--tran-05);
+}
+
+body.neww-dark {
+    --panel-color: #2D303E;
+    --nav-color: #1D1B31;
+    --sidebar-color: #1D1B31;
+    --text-color: #CCC;
+}
+
+/* Navigation Styles */
+nav.neww-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background: var(--sidebar-color);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    transition: var(--tran-05);
+}
+
+nav.neww-sidebar.neww-closed {
+    width: 88px;
+}
+
+nav.neww-sidebar .neww-logo-name {
+    display: flex;
+    align-items: center;
+}
+
+nav.neww-sidebar .neww-logo-image img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav.neww-sidebar .neww-logo_name {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-left: 14px;
+}
+
+nav.neww-sidebar.neww-closed .neww-logo_name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav.neww-sidebar .neww-menu-items {
+    margin-top: 40px;
+    height: calc(100% - 90px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav.neww-sidebar .neww-menu-items li {
+    list-style: none;
+}
+
+nav.neww-sidebar .neww-menu-items li a {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    text-decoration: none;
+    color: var(--text-color);
+    position: relative;
+}
+
+nav.neww-sidebar .neww-menu-items li a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 8px;
+}
+
+nav.neww-sidebar .neww-menu-items li a .neww-link-name {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 14px;
+}
+
+nav.neww-sidebar.neww-closed .neww-menu-items li a .neww-link-name {
+    opacity: 0;
+    pointer-events: none;
+}
+
+nav.neww-sidebar .neww-mode-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+nav.neww-sidebar .neww-mode-toggle .neww-switch {
+    position: relative;
+    display: inline-block;
+    width: 44px;
+    height: 24px;
+    background: #E4E9F7;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+nav.neww-sidebar .neww-mode-toggle .neww-switch::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    transition: var(--tran-05);
+}
+
+body.neww-dark nav.neww-sidebar .neww-mode-toggle .neww-switch {
+    background: var(--primary-color);
+}
+
+body.neww-dark nav.neww-sidebar .neww-mode-toggle .neww-switch::before {
+    left: 22px;
+}
+
+/* Dashboard Styles */
+.neww-dashboard {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    padding: 10px 14px;
+    transition: var(--tran-05);
+}
+
+nav.neww-sidebar.neww-closed ~ .neww-dashboard {
+    left: 88px;
+    width: calc(100% - 88px);
+}
+
+.neww-dashboard .neww-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.neww-dashboard .neww-top .neww-sidebar-toggle {
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.neww-dashboard .neww-top .neww-search-box {
+    position: relative;
+    height: 45px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neww-dashboard .neww-top .neww-search-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    background: var(--sidebar-color);
+    padding: 0 20px 0 50px;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.neww-dashboard .neww-top .neww-search-box svg {
+    position: absolute;
+    left: 20px;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.neww-dash-content .neww-overview {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--panel-color);
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.neww-dash-content .neww-overview .neww-title {
+    display: flex;
+    align-items: center;
+}
+
+.neww-dash-content .neww-overview .neww-title i {
+    font-size: 26px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.neww-dash-content .neww-overview .neww-title .neww-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.neww-dash-content .neww-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.neww-dash-content .neww-boxes .neww-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--box1-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.33% - 10px);
+    color: #fff;
+}
+
+.neww-dash-content .neww-boxes .neww-box i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.neww-dash-content .neww-boxes .neww-box .neww-text {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.neww-dash-content .neww-boxes .neww-box .neww-number {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.neww-dash-content .neww-activity {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--panel-color);
+    border-radius: 10px;
+}
+
+.neww-dash-content .neww-activity .neww-title {
+    display: flex;
+    align-items: center;
+}
+
+.neww-dash-content .neww-activity .neww-title i {
+    font-size: 26px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.neww-dash-content .neww-activity .neww-title .neww-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.neww-dash-content .neww-activity .neww-activity-data {
+    margin-top: 20px;
+}
+
+.neww-dash-content .neww-activity .neww-activity-data .neww-data {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.neww-dash-content .neww-activity .neww-activity-data .neww-data .neww-data-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    flex-basis: 100%;
+}
+
+.neww-dash-content .neww-activity .neww-activity-data .neww-data .neww-data-list {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Additional CSS for responsiveness */
+@media (max-width: 768px) {
+    nav.neww-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        border: none;
+    }
+
+    nav.neww-sidebar.neww-closed {
+        width: 100%;
+    }
+
+    .neww-dashboard {
+        left: 0;
+        width: 100%;
+    }
+
+    nav.neww-sidebar .neww-menu-items {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    nav.neww-sidebar .neww-menu-items li {
+        flex: 1;
+    }
+
+    .neww-dash-content .neww-boxes {
+        flex-direction: column;
+    }
+
+    .neww-dash-content .neww-boxes .neww-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .neww-dashboard .neww-top {
+        flex-direction: column;
+    }
+
+    .neww-dashboard .neww-top .neww-search-box {
+        margin: 20px 0;
+    }
+}

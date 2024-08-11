@@ -1,0 +1,191 @@
+.repair-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 10em;
+  position:relative;
+  min-height: 100vh;
+  /* background-image: url("https://wallpapercave.com/wp/wp3978395.jpg"); */
+}
+
+.repair-header {
+  margin-bottom: 50px;
+}
+
+.repair-header h1 {
+  font-size: 2.5em;
+  color: black;
+}
+
+.repair-header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+.repair-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.repair-card {
+  background-color: #222;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  background-image: url('https://media.istockphoto.com/id/1347150429/photo/professional-mechanic-working-on-the-engine-of-the-car-in-the-garage.jpg?s=612x612&w=0&k=20&c=5zlDGgLNNaWsp_jq_L1AsGT85wrzpdl3kVH-75S-zTU=');
+}
+
+/*.service-card.active {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  width: 500px;
+}
+*/
+.repair-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.repair-icon {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.repair-card h2 {
+  font-size: 1.5em;
+  color: #fff;
+  margin-bottom: 100px;
+  
+}
+
+
+.repair-card p {
+  font-size: 1em;
+  color: white;
+}
+h1.heading {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+  margin-bottom: 10px;
+}
+.body{
+background-image: url('');
+}
+/* Styles for the title */
+.title {
+  font-size: 2.5em;
+  color: #ff4b2b; /* Choose a color that fits your theme */
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect */
+}
+/* Styles for paragraphs */
+.para {
+  font-size: 1em; /* Adjust size as needed */
+  color: #333; /* Choose a color that fits your theme */
+  line-height: 1.6; /* Ensures good readability */
+  margin: 20px 0; /* Adjust margin as needed */
+  text-align: justify; /* Justify text for neat alignment */
+  font-family: 'Arial', sans-serif; /* Choose a font that fits your theme */
+  max-width: 800px; /* Optional: Limit the width of paragraphs for better readability */
+  padding: 0 20px; /* Optional: Add padding for spacing */
+}
+/* Default link style */
+.a {
+  color: #d9d7ed; /* Blue color for the link */
+  text-decoration: line-through; /* Remove underline */
+  text-align: end;
+}
+
+/* Hover style */
+.a:hover {
+  color: #d14; /* Darker color on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Visited link style */
+.a:visited {
+  color: rgb(112, 98, 236); /* Purple color for visited links */
+}
+
+/* Active link style */
+.a:active {
+  color: #f00; /* Red color when the link is being clicked */
+}
+
+
+
+/* src/components/CardContainer.css */
+/* .repair-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em;
+  border: 2px solid black;
+  border-radius: 0px;
+  background-color: red;
+  
+} */
+.car {
+  font-size: 1.6em; /* Larger font size */
+  font-weight: 600; /* Semi-bold weight */
+  color: black; /* Dark color for contrast */
+  margin-bottom: 10px; /* Space below the title */
+  text-transform: uppercase; /* Uppercase letters */
+  letter-spacing: 1.5px; /* Spacing between letters */
+  border-bottom: 3px solid #2980b9; /* Bottom border with accent color */
+  padding-bottom: 5px; /* Space inside the border */
+  transition: color 0.3s, border-bottom-color 0.3s; /* Smooth color transition */
+  
+}
+
+.car:hover {
+  color: #2980b9; /* Change title color on hover */
+  border-bottom-color: #3498db; /* Change border color on hover */
+}
+/* General button styling */
+.bt {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #2980b9; /* Primary button color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none; /* Remove underline from link buttons */
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+/* Hover state */
+.bt:hover {
+  background-color: #3498db; /* Lighter shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Active state */
+.bt:active {
+  background-color: #1c5d88; /* Darker shade when pressed */
+  transform: translateY(0); /* Remove lift effect */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow */
+}
+
+/* Focus state */
+.bt:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Custom focus ring */
+}

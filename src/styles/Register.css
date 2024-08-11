@@ -1,0 +1,80 @@
+/* General Styles */
+html {
+  font-size: 16px;
+}
+
+
+
+.register-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  position: relative;
+  margin-left: 450px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.register-container h2 {
+  font-size: 2.2em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.register-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container label {
+  margin-bottom: 0.5em;
+  color: #555;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.register-container form button {
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.register-container form button:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.message {
+  margin-top: 1em;
+  color: #e74c3c;
+  font-weight: bold;
+}

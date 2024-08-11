@@ -1,0 +1,89 @@
+.login-container {
+  max-width: 400px;
+  margin-top: 300px;
+  margin-left: 450px;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: -100px;
+}
+
+.login-container h2 {
+  font-size: 2em;
+  
+  color: #333;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container label {
+  margin-bottom: 0.5em;
+  color: #555;
+  font-weight: bold;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.8em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-container form button {
+  padding: 0.8em;
+  font-size: 1.2em;
+  color: #fff;
+  background: linear-gradient(90deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-container form button:hover {
+  background: linear-gradient(90deg, #0056b3, #007bff);
+}
+
+.message {
+  margin-top: 1em;
+  color: red;
+  font-weight: bold;
+}
+
+.home-link {
+  display: block;
+  margin-top: 1em;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.home-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

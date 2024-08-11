@@ -1,45 +1,40 @@
 const serviceData = [
   {
     id: 1,
-    title: "City Transfer",
+    title: "Car Rental",
     icon: "ri-map-pin-2-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "A car rental website allows users to book vehicles for short-term use. It typically offers a range of cars, from economy to luxury models, with options for pickup and drop-off locations. Users can compare prices, read reviews, and select additional services like insurance and GPS.",
   },
 
   {
     id: 2,
-    title: "Whole  City Tour",
+    title: "All Car Spares",
     icon: "ri-community-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "A car accessories website offers a variety of products to enhance and customize vehicles. Items typically include seat covers, floor mats, car electronics, exterior and interior upgrades, performance parts, and maintenance tools. Users can browse categories, read product reviews, and make secure purchases online.",
   },
 
   {
     id: 3,
-    title: "Unlimited Miles Car Rental",
+    title: "Car Service",
     icon: "ri-roadster-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "A car service website provides information and booking options for vehicle maintenance and repairs. It usually includes services like oil changes, tire rotations, brake repairs, and diagnostics. Users can schedule appointments, view service details, and find pricing information. The site may also feature customer reviews and service center locations.",
   },
 
   {
     id: 4,
     title: "Fast & Easy Booking",
     icon: "ri-timer-flash-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Effortlessly book your next adventure online in just a few clicks—fast, easy, and hassle-free!",
   },
 
   {
     id: 5,
     title: "Many Pickup Locations",
     icon: "ri-map-pin-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+    desc: "Choose from countless pickup locations for ultimate convenience—wherever you need, we've got you covered!",
   },
 
-  {
-    id: 6,
-    title: "Airport Transfer",
-    icon: "ri-flight-takeoff-line",
-    desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
-  },
+
 ];
 
 export default serviceData;

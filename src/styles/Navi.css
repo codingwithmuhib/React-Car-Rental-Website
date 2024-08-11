@@ -1,0 +1,176 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  /* Navbar styling */
+  .nav {
+    display: flex;
+    justify-content: space-between; /* Space out the items */
+    align-items: center; /* Vertically center align items */
+    width: 100%; /* Ensure it spans the full width */
+    max-width: 100%; /* Prevent any overflow issues */
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    /* background-color: rgba(0, 0, 0, 0.89); Semi-transparent background for readability */
+    position: fixed; /* Fix the navbar to the top */
+    top: 0; /* Align it to the top of the page */
+    left: 0; /* Align it to the left edge */
+    right: 0; /* Align it to the right edge */
+    z-index: 1000; /* Ensure it sits above other content */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  }
+  
+  /* Logo styling */
+  .nav .logo {
+    display: flex; /* Align the image and text in a row */
+    align-items: center; /* Vertically center align items */
+    font-size: 2.8rem;
+  }
+  
+  /* Adjust the logo image */
+  .nav .logo img {
+    height: 140px; /* Adjust the height to fit your design */
+    margin-right: 10px; /* Space between the image and text */
+  }
+  
+  /* Navigation menu styling */
+  .nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Reset margin */
+  }
+  
+  /* Navigation link styling */
+  /* Base styling for futuristic navbar links */
+  .nav li a {
+    background: linear-gradient(135deg, rgba(236, 10, 28, 0.8), rgba(255, 20, 20, 0.8));
+    color: white;
+    padding: 0.5rem 1.5rem; /* Adjust padding for better click area */
+    text-decoration: none;
+    border-radius: 12px; /* Rounded corners for a modern look */
+    font-weight: bold; /* Make the text stand out */
+    text-transform: uppercase; /* Modern, uppercase text */
+    font-size: 1.8rem; /* Ensure readability */
+    display: inline-block; /* Ensure proper padding and margin handling */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(236, 10, 28, 0.6); /* Enhanced shadow effects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease; /* Smooth transitions */
+    margin-right: 1.5rem;
+  }
+  
+  /* Before pseudo-element for added glow effect */
+  .nav li a::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 10, 28, 0.4), rgba(255, 20, 20, 0.4));
+    transition: all 0.3s ease;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  /* Hover effect for futuristic feel */
+  .nav li a:hover {
+    background: linear-gradient(135deg, rgba(255, 20, 20, 0.8), rgba(236, 10, 28, 0.8));
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(236, 10, 28, 0.8); /* Intensified shadow on hover */
+  }
+  
+  /* Hover effect for pseudo-element */
+  .nav li a:hover::before {
+    background: radial-gradient(circle, rgba(255, 20, 20, 0.6), rgba(236, 10, 28, 0.6));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Highlight link styling */
+  .nav li .highlight {
+    background: linear-gradient(135deg, rgba(236, 10, 28, 0.8), rgba(255, 20, 20, 0.8));
+    color: white;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 15px rgba(236, 10, 28, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  }
+  
+  .nav li .highlight:hover {
+    background: linear-gradient(135deg, rgba(255, 20, 20, 0.8), rgba(236, 10, 28, 0.8));
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4), 0 0 30px rgba(236, 10, 28, 0.8);
+  }
+  
+  .nav li .highlight::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(236, 10, 28, 0.4), rgba(255, 20, 20, 0.4));
+    transition: all 0.3s ease;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  
+  .nav li .highlight:hover::before {
+    background: radial-gradient(circle, rgba(255, 20, 20, 0.6), rgba(236, 10, 28, 0.6));
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .selected {
+    font-weight: bold;
+  }
+  
+  .highlight {
+    background-color: #ec0a1c;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    position: relative;
+  }
+  
+  .icon-link:hover {
+    color: #ccc;
+  }
+  
+  .cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }

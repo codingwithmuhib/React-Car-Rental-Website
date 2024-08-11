@@ -1,0 +1,277 @@
+.charges-container {
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 950px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    margin-top: 80px;
+}
+
+h2 {
+    color: #2987ba;
+    margin-bottom: 20px;
+}
+
+.charges-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(74, 38, 221, 0.1);
+}
+
+.charges-description {
+    max-width: 70%;
+}
+
+.charges-amount {
+    color: #3d7f96;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.charges-details-link {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.charges-details-link button {
+    color: #4448b3;
+    text-decoration: none;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.charges-details-link button:hover {
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.charges-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(29, 60, 127, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.charges-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.charges-modal h2 {
+    margin-bottom: 20px;
+}
+
+.charges-modal ul {
+    list-style: none;
+    padding: 0;
+}
+
+.charges-modal li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.charges-modal button {
+    background-color: #4574d3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.charges-modal button:hover {
+    background-color: #57d1c3;
+}
+
+.charges-paracharges {
+    color: rgb(98, 99, 111);
+}
+
+.charges-container-methods {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Center the items */
+
+}
+
+.charges-method-item {
+    padding: 10px;
+    margin: 5px 0;
+    width: 200px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    align-items: flex-start;
+}
+
+.charges-method-item.hovered {
+    background-color: rgb(145, 157, 234);
+    border-radius: 50px;
+}
+
+.charges-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.charges-button.visible {
+    opacity: 1;
+    visibility: visible;
+}
+/* Popup Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-bottom: 20px;
+}
+
+.popup p {
+    margin-bottom: 10px;
+}
+
+.popup-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.popup-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-buttons button:first-child {
+    background-color: #384195;
+    color: white;
+}
+
+.popup-buttons button:last-child {
+    background-color: #ff6b6b;
+    color: white;
+}
+/* Payment Form Modal Styles */
+.payment-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.payment-modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.payment-modal h2 {
+    margin-bottom: 20px;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.payment-form label {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.payment-form input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.payment-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-form button:hover {
+    background-color: #21867a;
+}
+
+.close-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #e55b5b;
+}

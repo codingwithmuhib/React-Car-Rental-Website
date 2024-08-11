@@ -44,7 +44,7 @@
   padding: 20px 0px;
 }
 
-.logo h1 a span {
+/* .logo h1 a span {
   font-size: 1.5rem;
 }
 
@@ -54,13 +54,25 @@
 
 .logo h1 a {
   text-decoration: none;
-  color: #000d6b;
+  color: #e94855;
   font-weight: 700;
 }
 
 .logo h1 {
   line-height: 1.5rem;
+} */
+/* Existing CSS */
+/* Add these rules for the logo image */
+.logo img {
+  max-width: 100px; /* Adjust the width as needed */
+  height: auto;    /* Maintains the aspect ratio */
+  display: block;
+  margin: 0 auto;  /* Center the image if needed */
+  margin-left: -10px; /* Move the image slightly to the left, adjust value as needed */
 }
+
+/* Other existing CSS */
+
 
 .header__location span i {
   font-size: 2.2rem;

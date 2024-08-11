@@ -32,19 +32,10 @@ const About = () => {
                 </h2>
 
                 <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
+                Experience peace of mind with our car rental services. Our vehicles undergo rigorous safety checks and regular maintenance to ensure your journey is secure. Enjoy reliable, well-maintained cars equipped with the latest safety features for a worry-free ride every time.
                 </p>
 
-                <p className="section__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Eveniet veniam assumenda aperiam accusantium ex autem
-                  perferendis repellendus nostrum delectus. Nemo et dolore est
-                  tempore rem minima adipisci magni dolorum ipsam.
-                </p>
-
+               
                 <div className=" d-flex align-items-center gap-3 mt-4">
                   <span className="fs-4">
                     <i class="ri-phone-line"></i>
@@ -52,7 +43,7 @@ const About = () => {
 
                   <div>
                     <h6 className="section__subtitle">Need Any Help?</h6>
-                    <h4>+00123456789</h4>
+                
                   </div>
                 </div>
               </div>
@@ -61,7 +52,7 @@ const About = () => {
         </Container>
       </section>
 
-      <BecomeDriverSection />
+    
 
       <section>
         <Container>

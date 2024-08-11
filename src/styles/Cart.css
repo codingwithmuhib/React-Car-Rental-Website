@@ -1,0 +1,114 @@
+.cart {
+  background: linear-gradient(135deg, #1a1a1d, #4e4e50);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  max-width: 800px;
+  margin: 40px auto;
+  margin-top: 12rem; /* Reduced margin-top to move the container closer to the navbar */
+  min-height: 60vh; /* Reduced min-height to make the container shorter */
+ 
+}
+
+.yc {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.cart-item {
+  background: rgba(0, 255, 255, 0.1);
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s;
+}
+
+.cart-item:hover {
+  transform: scale(1.05);
+}
+
+.cart-item h2 {
+  font-size: 1.5rem;
+  color: #00ffff;
+}
+
+.cart-item p {
+  font-size: 1.1rem;
+}
+
+.select-date h3 {
+  color: #00ffff;
+  margin-bottom: 10px;
+}
+
+.select-date .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.select-date button {
+  background: #00ffff;
+  border: none;
+  color: #1a1a1d;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.select-date button:hover {
+  background: #009999;
+}
+
+.botbut {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.botbut button {
+  background: #00ffff;
+  border: none;
+  color: #1a1a1d;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.botbut button:hover {
+  background: #009999;
+}
+
+.remove-button {
+  background: #009999;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.remove-button:hover {
+  background: #cc0000;
+}
+
+.emp {
+  font-size: 2rem;
+  text-align: center;
+  color: #00ffff;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}

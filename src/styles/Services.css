@@ -1,0 +1,168 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin-top: 0rem;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.services-header {
+  margin-bottom: 50px;
+}
+
+.services-header h1 {
+  font-size: 2.5em;
+  color: #333;
+  font-weight: bold;
+}
+
+.services-header p {
+  font-size: 1.2em;
+  color: #666;
+  font-weight: 500;
+}
+
+.services-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.service-card1,
+.service-card2,
+.service-card3 {
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  padding: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7); /* Added background color with transparency */
+}
+
+.service-card1::before,
+.service-card2::before,
+.service-card3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Adjust opacity here */
+  z-index: 0;
+}
+
+.service-card1::before {
+  background-image: url('https://st2.depositphotos.com/1022214/5248/i/450/depositphotos_52489449-stock-photo-man-offering-a-car-key.jpg');
+}
+
+.service-card2::before {
+  background-image: url('https://images.pexels.com/photos/8986148/pexels-photo-8986148.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.service-card3::before {
+  background-image: url('https://images.pexels.com/photos/3930091/pexels-photo-3930091.jpeg?auto=compress&cs=tinysrgb&w=600');
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h2,
+.service-card p {
+  position: relative;
+  z-index: 1;
+}
+
+.service-card h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.service-card p {
+  font-size: 1.1em;
+  color: #ddd;
+  font-weight: 500;
+}
+
+.service-icon {
+  font-size: 3.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+h1.heading {
+  font-size: 3.5em;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.title1 {
+  font-size: 1.8em;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.para {
+  font-size: 1.1em;
+  color: #ddd;
+  line-height: 1.6;
+  margin: 20px 0;
+  text-align: justify;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  padding: 0 20px;
+  font-weight: 500;
+}
+
+.a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.a:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.a:visited {
+  color: #fff;
+}
+
+.a:active {
+  background-color: #003d80;
+  transform: translateY(1px);
+}

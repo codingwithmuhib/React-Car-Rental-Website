@@ -1,6 +1,6 @@
 .slider__item {
   max-width: 100%;
-  height: 650px;
+  height: 500px;
 }
 
 .slider__item-01 {
@@ -29,6 +29,7 @@
 
 .hero__slider {
   overflow: hidden;
+  
 }
 
 .slider__content {
